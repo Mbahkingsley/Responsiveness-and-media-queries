@@ -1,132 +1,175 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-image: url(bg-intro-mobile.png);
-    background-color: rgb(223, 80, 80);
+    background-image: url(bg-intro-desktop.png);
+    background-color: rgb(167, 51, 51);
 }
 
-h2 {
+.parent{
+   position:absolute;
+   right: 200px;
+   top: 200px;
+   background-color: white;
+   width: 400px;
+   padding: 40px;
+   height: 340px;
+   border-radius: 5px;
+   
+  
+}
+
+main {
+    margin-top: -40px;
+}
+
+.label-class {
+    position:absolute;
+    right: 200px;
+    background-color: rgb(48, 48, 121);
+    width: 400px;
+    margin-top: 150px;
+    border-radius: 5px;
     text-align: center;
-    font-size: 23px;
-    margin-top: 70px;
-    margin-bottom: 25px;
-    color:whitesmoke;
-    font-family: poppins-bold;
-    letter-spacing: 2px;
-    
-}
-
-#p2 {
-    text-align: center;
-    color:whitesmoke;
-    line-height: 25px;
-    margin-bottom: 30px;
-    font-family: poppins-regular;
-}
-
-#p3 {
-    display: inline-block;
+    height: 40px;
+    padding-top: 10px;
     color: white;
-    background-color: rgb(83, 83, 228);
-    text-align: center;
-    margin-left:30px;
-    width: 300px;
-    border-radius: 10px;
-    /* margin-bottom: 5px; */
-    box-shadow: 0px 5px rgb(102, 99, 99);
-    height: 60px;
-    padding: 10px;
-    line-height: 22px;
-    font-family: poppins-regular;
-    font-size: 14px;
+   
 }
 
-@font-face {
-    font-family: poppins-bold;
-    src: url(Poppins/Poppins-bold.ttf);
-}
-
-@font-face {
-    font-family: poppins-regular;
-    src: url(Poppins/Poppins-Regular.ttf);
-}
-.text {
-    margin: auto;
-}
-
-.form-pane {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin:30px;
-    height: 37vh;
-    border-radius: 10px;
-    box-shadow: 0px 5px rgb(102, 99, 99) ;
-}
-
-.parent .form-pane input {
-    width: 250px;
-    height: 35px;
+.input {
+    height: 40px;
+    width: 330px;
+    border-radius: 5px;
+    padding: 20px;
     margin-bottom: 10px;
-    margin-left: 2px;
-    border-radius: 5px;
-    font-family: poppins-regular;
-    font-weight: 900;
+    border-color: white;
+    margin-left: -10px;
+
 }
 
-.input-1 {
-    margin-top: 10px;
-}
-
-.input-2 {
-    background-color: rgb(85, 192, 85);
-    width: 250px;
+ button {
     height: 35px;
-    color: white;
+    width: 340px;
     border-radius: 5px;
-    font-family: poppins-regular;
-    font-weight: 300;
-    letter-spacing: 1px;
+    border-color: white;
+    background-color: rgb(25, 194, 25);
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+
 }
+ 
+#p1 {
+    font-size: 9px;
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}  
 
 #bold1 {
     color: red;
-}
-
-#p1 {
-    color: gray;
-}
-
-input[type=email]:required:invalid:focus-visible{
-    background-image: url(icon-error.svg);
-    background-position: 90% center;
-    background-repeat: no-repeat;
-    border: var(--primary-Red) 1px solid;
-}
-
-input[type=text]:required:invalid:focus-visible{
-    background-image: url(icon-error.svg);
-    background-position: 90% center;
-    background-repeat: no-repeat;
-    border: var(--primary-Red) 1px solid;
-}
-
-input[type=password]:required:invalid:focus-visible{
-    background-image: url(icon-error.svg);
-    background-position: 90% center;
-    background-repeat: no-repeat;
-    border: var(--primary-Red) 1px solid;
-
-
-@media screen and (min-width: 100%) {
-    
-} 
     
 }
-     
+
+
+.text {
+    position: absolute;
+    left: 200px;
+    text-align:left;
+    color: whitesmoke;
+    margin-top: 270px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+#p2 {
+    margin-top: 20px;
+}
+
+@media screen and (max-width:375px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-image: url(bg-intro-desktop.png);
+        background-color: rgb(167, 51, 51);
+        
+    }
+
+    .text {
+        margin-top: 50px;
+        text-align:center;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: 20px;
+        left: -1px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    .label-class {
+        position: relative;
+        top: 200px;
+        right: -50px;
+        background-color: rgb(48, 48, 121);
+        width: 400px;
+        margin-top: -200px;
+        border-radius: 5px;
+        text-align: center;
+        height: 70px;
+        padding-top: 5px;
+        color: white;
+       
+    }
+
+    .input {
+        height: 10px;
+        width: 230px;
+        border-radius: 5px;
+        padding: 60px;
+        margin-bottom: 10px;
+        border-color: white;
+    
+    }
+    
+    .parent{
+        position:absolute;
+        right: 35px;
+        top: 200px;
+        background-color: white;
+        width: 280px;
+        padding: 60px;
+        height: 320px;
+        border-radius: 5px;
+        margin-top: -1px;
+        
+       
+     }
+
+     button {
+        height: 25px;
+        width: 340px;
+        border-radius: 5px;
+        border-color: white;
+        background-color: rgb(25, 194, 25);
+        color: white;
+        padding-bottom: -20px;
+    
+    }
+
+}
