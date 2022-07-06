@@ -90,6 +90,27 @@ main {
     margin-top: 20px;
 }
 
+input[type=email]:required:invalid:focus-visible{
+    background-image: url(icon-error.svg);
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    border: var(--primary-Red) 1px solid;
+}
+
+input[type=text]:required:invalid:focus-visible{
+    background-image: url(icon-error.svg);
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    border: var(--primary-Red) 1px solid;
+}
+
+input[type=password]:required:invalid:focus-visible{
+    background-image: url(icon-error.svg);
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    border: var(--primary-Red) 1px solid;
+}
+
 @media screen and (max-width:375px) {
     * {
         margin: 0;
